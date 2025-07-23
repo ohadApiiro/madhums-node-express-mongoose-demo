@@ -14,6 +14,7 @@ const auth = require('./middlewares/authorization');
  * Route middlewares
  */
 
+
 const articleAuth = [auth.requiresLogin, auth.article.hasAuthorization];
 const commentAuth = [auth.requiresLogin, auth.comment.hasAuthorization];
 
